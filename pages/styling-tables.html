@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Tables</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <body>
+  <div>
+</head>
+<h1>Styling Tables</h1>
+<nav>
+    <a href="../index.html">Table Basics</a>
+    <a href="../pages/styling-tables.html">Styling Tables</a>
+    <a href="../pages/calendar.html">Calendar</a>
+</nav>
+<h1>Styling Tables</h1>
+<h1 id="title">Fall Schedule</h1>
+
+<!-- Create a table for a schedule, you can make it fit five or seven days, and represent at least 10 hours doing the day.
+Make sure that the top row and leftmost column use <th> tags
+Style the <th> tag to change the background and font colors
+Add days of the week to the top row
+Add times to the first column
+Enter in schedule  information, merge cells using rowspan where appropriate
+have the rows change the background color on mouseover
+Add border colors to <th> and <td> tags
+Center and middle align the <td>
+Save and test your web page, then open calendar.html for the next step -->
+
+<style>
+     table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin: 20px auto;
+            background-color: white;
+        }
+        #title{
+            color: black;
+            background-color: pink;
+            text-align: center;
+            border: 5px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: black;
+            padding: 10px;
+            margin-left: 600px;
+            margin-right: 600px;
+        }
+
+        th{
+            background-color: pink;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+
+        }
+        tr:hover{
+            background-color: rgb(236, 220, 222);
+        }
+        
+
+
+
+        
+
+</style>
+
+<table width="80%">
+
+<tr>
+    <th></th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+</tr>
+
+<tr>
+    <th>8:00 AM</th>
+    <td rowspan="2">JRN 108-001</td>
+    <td></td>
+    <td rowspan="2">JRN 108-001</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <th>9:00 AM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>10:00 AM</th>
+    <td rowspan="2">MAT 165-004</td>
+    <td rowspan="2">MAT 165-004</td>
+    <td rowspan="2">MAT 165-004</td>
+    <td rowspan="2">MAT 165-004</td>
+    <td></td>
+</tr>
+<tr>
+    <th>11:00 AM</th>
+    <td></td>
+    
+</tr>
+<tr>
+    <th>12:00 PM</th>
+    <td>ENG 152-003</td>
+    <td></td>
+    <td>ENG 152-003</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>1:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>2:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>3:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>4:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>5:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <th>6:00 PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+
+
+
+</table>
+    </div>
+</body>
+</html>
